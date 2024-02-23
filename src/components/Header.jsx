@@ -48,7 +48,7 @@ export default function Header() {
           <a href="">Work</a>
         </li>
       </ul>
-      <div className="max-[1300px]:w-[20%] w-[10%] align-middle items-center  flex gap-2">
+      <div className="max-[1300px]:w-[20%] w-[10%] align-middle items-center  flex gap-4">
         <HeaderButton title="Login" />
         <a href="">
           <svg

@@ -10,7 +10,7 @@ export default function HeaderButton({
   return (
     <a
       href={url}
-      className="p-2 items-center text-center rounded-3xl  px-6 shadow-xl hover:border-2 border-[#471080]"
+      className="p-2 items-center text-center rounded-3xl  px-6 shadow-xl  hover:shadow-inner hover:bg-[#471080] hover:text-white hover:shadow-black"
     >
       {title}
     </a>

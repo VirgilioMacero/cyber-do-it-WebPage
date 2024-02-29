@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "Heavitas"; /*Can be any text*/
+  src: local("Heavitas"), url("./fonts/Heavitas.ttf") format("truetype");
+}

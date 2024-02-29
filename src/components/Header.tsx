@@ -3,13 +3,17 @@ import HeaderButton from "./HeaderButton";
 
 export default function Header() {
   return (
-    <div className="w-full pt-4  rounded-xl border-2 h-30 pb-4 flex">
+    <div className="w-full pt-4  rounded-b-[40px]  top-0 h-30 pb-4 flex sticky bg-white">
       <ul className="flex flex-row max-[1300px]:w-[80%] w-[90%] justify-center items-center gap-6 ">
         <li>
-          <a href="">Products</a>
+          <a href="" className="hover:font-bold">
+            Products
+          </a>
         </li>
         <li>
-          <a href="">About Us</a>
+          <a href="" className="hover:font-bold">
+            About Us
+          </a>
         </li>
         <li>
           <a href="">
@@ -42,14 +46,20 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="" className="hover:font-bold">
+            Contact
+          </a>
         </li>
         <li>
-          <a href="">Work</a>
+          <a href="" className=" hover:font-bold">
+            Work
+          </a>
         </li>
       </ul>
       <div className="max-[1300px]:w-[20%] w-[10%] align-middle items-center  flex gap-4">
-        <HeaderButton title="Login" />
+        <div className="w-[60%]">
+          <HeaderButton title="Login" url="" />
+        </div>
         <a href="">
           <svg
             width={22}

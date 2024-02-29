@@ -1,10 +1,11 @@
-import Header from "./components/Header";
+import Home from "./views/Home";
 import "./App.css";
+import "./fonts/Heavitas.ttf";
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Home></Home>
     </>
   );
 }

@@ -11,7 +11,7 @@ export default function Carrousel() {
       }}
     >
       <div className="flex align-middle items-center">
-        <a href="">
+        <a href="" className="max-[700px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -28,10 +28,10 @@ export default function Carrousel() {
           </svg>
         </a>
 
-        <div className="h-[320px] w-5/6 mx-[4vw]  shadow-2xl shadow-white rounded-[60px]">
+        <div className="h-[320px] w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full">
           {/* Carrousel Content */}
         </div>
-        <a href="">
+        <a href="" className="max-[700px]:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -32,7 +32,7 @@ export default function HalfAndHalf({
           alt=""
         />
       </div>
-      <div className="h-[450px] w-[60%] max-[1120px]:row-start-1 max-[1120px]:w-[90%] max-[1120px]:mx-10">
+      <div className="h-[450px] w-[60%] max-[1120px]:row-start-1 max-[1120px]:w-[90%] max-[1120px]:mx-10 max-[500px]:mx-5">
         <div className="mt-[20%]">
           <h1
             className={`text-5xl max-[1220px]:text-[${firstColor}]`}
@@ -41,7 +41,7 @@ export default function HalfAndHalf({
             {firstTitle}
           </h1>
           <p
-            style={{ fontFamily: "monospace", color: secondColor }}
+            style={{ fontFamily: "Trebuchet MS", color: secondColor }}
             className={`mt-2 text-[${secondColor}]`}
           >
             {firstText}
@@ -49,7 +49,7 @@ export default function HalfAndHalf({
         </div>
       </div>
 
-      <div className="h-[450px] w-[80%] max-[1120px]:w-[90%] max-[1120px]:mx-10">
+      <div className="h-[450px] w-[80%] max-[1120px]:w-[90%] max-[1120px]:mx-10 max-[500px]:mx-5">
         <div className="mt-20 grid grid-cols-2 gap-20 max-[1120px]:grid-cols-1 max-[1120px]:gap-4">
           <h1
             className={`text-5xl`}
@@ -58,7 +58,7 @@ export default function HalfAndHalf({
             {secondTitle}
           </h1>
           <p
-            style={{ color: firstColor, fontFamily: "monospace" }}
+            style={{ color: firstColor, fontFamily: "Trebuchet MS" }}
             className="mt-2"
           >
             {secondText}

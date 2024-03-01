@@ -20,7 +20,7 @@ export default function HalfAndHalf({
       style={{
         background: `linear-gradient(${firstColor} 50%,${secondColor} 0%)`,
       }}
-      className={`grid grid-cols-2 grid-rows-2 gap-3 max-[1120px]:grid-cols-1 max-[1120px]:grid-rows-1`}
+      className={`grid grid-cols-2 grid-rows-2 gap-3 max-[1120px]:grid-cols-1 max-[1120px]:grid-rows-1 max-[423px]:gap-20`}
     >
       <div
         className={` row-span-2 my-[12%] mx-[15%] max-[1120px]:row-start-2 max-[1120px]:mx-[25%] max-[500px]:mx-[10%] max-[1120px]:my-0`}

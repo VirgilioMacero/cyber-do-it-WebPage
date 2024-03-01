@@ -32,8 +32,8 @@ export default function HalfAndHalf({
           alt=""
         />
       </div>
-      <div className="h-[450px] w-[60%] max-[1120px]:row-start-1 max-[1120px]:w-[90%] max-[1120px]:mx-10 max-[500px]:mx-5">
-        <div className="mt-[20%]">
+      <div className="h-[450px] w-[80%] max-[1120px]:row-start-1 max-[1120px]:w-[90%] max-[1120px]:mx-10 max-[500px]:mx-5">
+        <div className="mt-[15%] h-[30vh]">
           <h1
             className={`text-5xl max-[1220px]:text-[${firstColor}]`}
             style={{ fontFamily: "Heavitas", color: secondColor }}
@@ -42,10 +42,17 @@ export default function HalfAndHalf({
           </h1>
           <p
             style={{ fontFamily: "Trebuchet MS", color: secondColor }}
-            className={`mt-2 text-[${secondColor}]`}
+            className={`mt-2 text-[${secondColor}] mb-7`}
           >
             {firstText}
           </p>
+          <a
+            href=""
+            style={{ backgroundColor: secondColor, fontFamily: "Azeret Mono" }}
+            className={`p-4 rounded-full`}
+          >
+            Learn More
+          </a>
         </div>
       </div>
 

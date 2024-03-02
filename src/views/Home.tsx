@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
 import HalfAndHalf from "../components/HalfAndHalf";
 import Address from "../components/Address";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Carrousel />
       <HalfAndHalf />
       <Address />
+      <Footer />
     </div>
   );
 }

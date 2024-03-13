@@ -8,8 +8,13 @@ export default function Address() {
     >
       <div className="" style={{ fontFamily: "Azeret Mono" }}>
         <h1 className="text-5xl pb-5">Our Location</h1>
-        <p>11561 NW 76th St</p>
-        <p>Florida Medley</p>
+        <a
+          href=""
+          className="hover:underline decoration-[#3D2DA2] decoration-2"
+        >
+          <p>11561 NW 76th St</p>
+          <p>Florida Medley</p>
+        </a>
         <p className="max-[700px]:hidden">--------------------{">"}</p>
       </div>
       <div className="rounded-3xl">

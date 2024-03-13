@@ -57,7 +57,7 @@ export default function HalfAndHalf({
       </div>
 
       <div className="h-[450px] w-[80%] max-[1120px]:w-[90%] max-[1120px]:mx-10 max-[500px]:mx-5">
-        <div className="mt-20 grid grid-cols-2 gap-20 max-[1120px]:grid-cols-1 max-[1120px]:gap-4 max-[376px]:mt-0">
+        <div className="mt-20 grid grid-cols-2 gap-20 max-[1120px]:grid-cols-1 max-[1120px]:gap-4 max-[418px]:mt-0">
           <h1
             className={`text-5xl`}
             style={{ fontFamily: "Heavitas", color: firstColor }}

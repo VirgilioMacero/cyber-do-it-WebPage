@@ -10,7 +10,7 @@ export default function Carrousel() {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex align-middle items-center">
+      <div className="flex justify-between items-center">
         <button
           id="leftButton"
           className="max-[700px]:hidden  focus:bg-white  focus:bg-opacity-25 delay-200"
@@ -30,7 +30,6 @@ export default function Carrousel() {
             />
           </svg>
         </button>
-
         <div className="h-[320px] w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full">
           {/* Carrousel Content */}
         </div>

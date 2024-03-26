@@ -1,14 +1,1 @@
-@font-face {
-  font-family: "Heavitas"; /*Can be any text*/
-  src: local("Heavitas"), url("./fonts/Heavitas.ttf") format("truetype");
-}
 
-@font-face {
-  font-family: "Futura-Bold"; /*Can be any text*/
-  src: local("Futua-Bold"), url("./fonts/futur.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Futura BK BT"; /*Can be any text*/
-  src: local("Futura BK BT"),
-    url("./fonts/Futura\ Book\ font.ttf") format("truetype");
-}

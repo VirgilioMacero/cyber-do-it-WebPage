@@ -1,4 +1,4 @@
-import image from "../assets/taviCow.jpg";
+import baseimage from "../assets/taviCow.jpg";
 
 export default function HalfAndHalf({
   firstColor = "#3D2DA2",
@@ -7,6 +7,7 @@ export default function HalfAndHalf({
   secondTitle = "second, how can we help you",
   firstText = "Meet Cyber Do It, a dynamic family business led by Vianny, mom and visionary entrepreneur. With Virgilio managing IT, Vivian excelling in graphic design, and Vianny overseeing social media, this powerhouse trio delivers a comprehensive suite of digital services. From innovative IT solutions to captivating designs and strategic social media management, Cyber Do It is your one-stop-shop for personalized and cutting-edge digital solutions.",
   secondText = "Unlock the Power of Digital Success with Our Dynamic Trio. Elevate your business to new heights, captivate your audience, and stay ahead of the curve in the digital realm. Let's revolutionize your online presence together! Embrace innovation, embrace success. Get started today!",
+  image = baseimage,
 }: {
   firstColor: string;
   secondColor: string;
@@ -14,6 +15,7 @@ export default function HalfAndHalf({
   secondTitle: string;
   firstText: string;
   secondText: string;
+  image: string;
 }) {
   return (
     <div

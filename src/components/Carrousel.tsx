@@ -1,4 +1,3 @@
-import React from "react";
 import image from "../assets/carrousel-background.png";
 
 export default function Carrousel() {

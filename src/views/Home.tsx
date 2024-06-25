@@ -11,6 +11,7 @@ export default function Home() {
   const [cookies] = useCookies(["cookieConsent"]);
   const images = [
     'https://via.placeholder.com/800x400?text=Slide+1',
+    'Hola',
     'https://via.placeholder.com/800x400?text=Slide+2',
     'https://via.placeholder.com/800x400?text=Slide+3'
   ];

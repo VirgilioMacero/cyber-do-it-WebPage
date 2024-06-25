@@ -14,13 +14,13 @@ export default function Carrousel({images}:{images:Array<string>}) {
   };
   return (
     <div
-      className="w-full h-[420px] pb-12 max-[700px]:pt-12"
+      className="w-full min-h-[420px] h-80 pb-12 max-[700px]:pt-12"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
       }}
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center size-full pt-10">
         <button
           id="leftButton"
           className="max-[700px]:hidden  focus:bg-white  focus:bg-opacity-25 delay-200"
@@ -41,14 +41,20 @@ export default function Carrousel({images}:{images:Array<string>}) {
             />
           </svg>
         </button>
-        <div className="h-[320px] w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full relative overflow-hidden ">
+        <div className="min-h-[320px] h-full w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full relative overflow-hidden ">
           <div className="flex h-full transition-transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }} id="container-image">
-            {images.map((image, index) => (
-              <img src={image} alt="" key={index} className="min-w-full h-full"/>
-            ))}
-            <div className="h-full min-w-full w-full bg-slate-500"></div>
-            <div className="size-full min-w-full bg-green-500"></div>
-            <div className="size-full min-w-full bg-red-500"></div>
+            {images.map((image, index) => {  
+               if (image.includes('http')) 
+                {
+                 return <img src={image} alt="" key={index} className="min-w-full h-full"/>
+                }
+                else{
+                  return <div className="h-full text-white min-w-full flex items-center justify-center w-full bg-transparent"> 
+                    {image}
+                  </div>
+                }
+              })}
+
           </div>
 
         </div>

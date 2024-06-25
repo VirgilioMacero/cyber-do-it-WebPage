@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
 import groupImage from "../assets/familyPhoto.jpg";
 import { useCookies } from "react-cookie";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   const [cookies] = useCookies(["cookieConsent"]);
@@ -23,6 +24,7 @@ export default function Home() {
         secondText="Unlock the Power of Digital Success with Our Dynamic Trio. Elevate your business to new heights, captivate your audience, and stay ahead of the curve in the digital realm. Let's revolutionize your online presence together! Embrace innovation, embrace success. Get started today!"
         image={groupImage}
       />
+      <Gallery/>
       <Address />
       <Footer />
       {!cookies.cookieConsent && <CookieConsent />}

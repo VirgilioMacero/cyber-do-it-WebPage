@@ -1,5 +1,5 @@
 export default function Footer() {
-  var fechaActual = new Date();
+  const fechaActual = new Date();
 
   return (
     <div className="h-[220px] w-full">

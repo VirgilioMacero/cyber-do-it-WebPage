@@ -1,5 +1,5 @@
 import { useCookies } from "react-cookie";
-import cookieImage from "../assets/cookie.png";
+import cookieImage from "../../assets/cookie.png";
 import Button from "./Button";
 
 export default function CookieConsent() {

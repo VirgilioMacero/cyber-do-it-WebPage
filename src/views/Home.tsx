@@ -1,9 +1,9 @@
-import Header from "../components/Header";
-import Carrousel from "../components/Carrousel";
-import HalfAndHalf from "../components/HalfAndHalf";
-import Address from "../components/Address";
-import Footer from "../components/Footer";
-import CookieConsent from "../components/CookieConsent";
+import Header from "../components/Shared/Header";
+import Carrousel from "../components/Home/Carrousel";
+import HalfAndHalf from "../components/Home/HalfAndHalf";
+import Address from "../components/Home/Address";
+import Footer from "../components/Shared/Footer";
+import CookieConsent from "../components/Shared/CookieConsent";
 import groupImage from "../assets/familyPhoto.jpg";
 import { useCookies } from "react-cookie";
 

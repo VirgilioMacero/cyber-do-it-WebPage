@@ -1,4 +1,4 @@
-import image from "../assets/carrousel-background.png";
+import image from "../../assets/carrousel-background.png";
 
 export default function Carrousel() {
   return (

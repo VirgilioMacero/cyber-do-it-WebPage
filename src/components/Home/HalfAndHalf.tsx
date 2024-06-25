@@ -1,4 +1,4 @@
-import baseimage from "../assets/taviCow.jpg";
+import baseimage from "../../assets/taviCow.jpg";
 
 export default function HalfAndHalf({
   firstColor = "#3D2DA2",

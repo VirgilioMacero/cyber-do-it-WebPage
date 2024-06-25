@@ -5,7 +5,7 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div className="sticky w-full  top-0">
+    <div className="sticky w-full z-10 top-0">
       <nav className="w-full pt-4  rounded-b-[40px] flex  h-30 pb-4  bg-white max-[700px]:rounded-b-none">
         <div className="flex flex-row max-[1300px]:w-[80%] w-[85%] justify-center items-center gap-6 max-[760px]:w-full max-[760px]:justify-between max-[760px]:px-4 pl-[10%]">
           <ul className="flex flex-row  justify-center items-center gap-6 max-[760px]:w-full max-[760px]:justify-between ">

@@ -9,11 +9,16 @@ import { useCookies } from "react-cookie";
 
 export default function Home() {
   const [cookies] = useCookies(["cookieConsent"]);
+  const images = [
+    'https://via.placeholder.com/800x400?text=Slide+1',
+    'https://via.placeholder.com/800x400?text=Slide+2',
+    'https://via.placeholder.com/800x400?text=Slide+3'
+  ];
 
   return (
     <div>
       <Header></Header>
-      <Carrousel />
+      <Carrousel images={images}/>
       <HalfAndHalf
         firstColor="#3D2DA2"
         secondColor="#f0f0f0"

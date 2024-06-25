@@ -6,12 +6,12 @@ export default function LinkButton({
   textColor = "#3D2DA2",
   className = "",
 }: {
-  name: string;
-  link: string;
-  bgColor: string;
-  hoverBg: string;
-  textColor: string;
-  className: string;
+  name?: string;
+  link?: string;
+  bgColor?: string;
+  hoverBg?: string;
+  textColor?: string;
+  className?: string;
 }) {
   function MouseOver(event: any) {
     event.target.style.background = hoverBg;

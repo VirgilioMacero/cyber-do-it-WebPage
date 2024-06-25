@@ -4,8 +4,8 @@ export default function ItemGallery({
     textButton = "Test",
 }:{
     classContainer: string;
-    buttonInside: boolean;
-    textButton: string;
+    buttonInside?: boolean;
+    textButton?: string;
 }){
     const renderButton = () => {
         if (buttonInside) {

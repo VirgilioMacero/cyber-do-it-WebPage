@@ -1,4 +1,4 @@
-import LinkButton from "./LinkButton";
+import LinkButton from "../../Shared/LinkButton";
 
 export default function NavProducts(){
     return (

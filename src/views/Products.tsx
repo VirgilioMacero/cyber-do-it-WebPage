@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import NavProducts from "../components/NavProducts";
+import Footer from "../components/Shared/Footer";
+import Header from "../components/Shared/Header";
+import NavProducts from "../components/Home/Gallery/NavProducts";
 
 export default function Products() {
     return(

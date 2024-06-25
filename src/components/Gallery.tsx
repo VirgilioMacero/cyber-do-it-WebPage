@@ -1,4 +1,4 @@
-import ItemGallery from "./ItemGallery"
+import ItemGallery from "./Home/Gallery/ItemGallery"
 
 export default function Gallery() {
     return (

@@ -3,14 +3,45 @@ import image from "../../assets/carrousel-background.png";
 
 export default function Carrousel({images}:{images:Array<string>}) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(currentIndex)
+  const [isDragging, setIsDragging] = useState(false);
+  const [startPos, setStartPos] = useState(0);
+  const [currentTranslate, setCurrentTranslate] = useState(0);
+  const [prevTranslate, setPrevTranslate] = useState(0);
+
   const nextSlide = () => {
-    console.log(`(${currentIndex} + 1) % ${images.length}` )
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const startPosition = (position) => {
+    setIsDragging(true);
+    setStartPos(position);
+    setCurrentTranslate(prevTranslate);
+  };
+
+  const movePosition = (position) => {
+    if (isDragging) {
+      const currentPosition = position - startPos;
+      setCurrentTranslate(prevTranslate + currentPosition);
+    }
+  };
+
+  const endPosition = () => {
+    setIsDragging(false);
+    const movedBy = currentTranslate - prevTranslate;
+    console.log(movedBy)
+    if (movedBy < -20 && currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+
+    if (movedBy > 20 && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+
+    setPrevTranslate(currentTranslate);
   };
   return (
     <div
@@ -42,7 +73,11 @@ export default function Carrousel({images}:{images:Array<string>}) {
           </svg>
         </button>
         <div className="min-h-[320px] h-full w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full relative overflow-hidden ">
-          <div className="flex h-full transition-transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }} id="container-image">
+          <div className="flex h-full transition-transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            onTouchStart={(e) => startPosition(e.touches[0].clientX)}
+            onTouchMove={(e) => movePosition(e.touches[0].clientX)}
+            onTouchEnd={endPosition}
+          >
             {images.map((image, index) => {  
                if (image.includes('http')) 
                 {

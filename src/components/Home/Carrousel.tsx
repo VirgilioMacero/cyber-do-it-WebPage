@@ -1,5 +1,6 @@
 import { useState } from "react";
 import image from "../../assets/carrousel-background.png";
+import { useSwipeable } from "react-swipeable";
 
 export default function Carrousel({ images }: { images: Array<string> }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,6 +45,18 @@ export default function Carrousel({ images }: { images: Array<string> }) {
 
     setPrevTranslate(currentTranslate);
   };
+
+  // Swipe for Phone Gestures
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      nextSlide();
+    },
+    onSwipedRight: () => {
+      prevSlide();
+    },
+  });
+
   return (
     <div
       className="w-full min-h-[420px] h-80 pb-12 max-[700px]:pt-12"
@@ -89,6 +102,7 @@ export default function Carrousel({ images }: { images: Array<string> }) {
                     alt=""
                     key={index}
                     className="min-w-full h-full"
+                    {...handlers}
                   />
                 );
               } else {
@@ -96,6 +110,7 @@ export default function Carrousel({ images }: { images: Array<string> }) {
                   <div
                     key={index}
                     className="h-full text-white min-w-full flex items-center justify-center w-full bg-transparent"
+                    {...handlers}
                   >
                     {image}
                   </div>

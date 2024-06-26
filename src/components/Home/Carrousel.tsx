@@ -32,7 +32,6 @@ export default function Carrousel({images}:{images:Array<string>}) {
   const endPosition = () => {
     setIsDragging(false);
     const movedBy = currentTranslate - prevTranslate;
-    console.log(movedBy)
     if (movedBy < -20 && currentIndex < images.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }

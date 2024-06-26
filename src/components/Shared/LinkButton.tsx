@@ -3,7 +3,7 @@ export default function LinkButton({
   link = "",
   className = "",
 }: {
-  name?: string;
+  name: string;
   link?: string;
   className?: string;
 }) {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HeaderButton from "./HeaderButton";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
@@ -10,9 +11,9 @@ export default function Header() {
         <div className="flex flex-row max-[1300px]:w-[80%] w-[85%] justify-center items-center gap-6 max-[760px]:w-full max-[760px]:justify-between max-[760px]:px-4 pl-[10%]">
           <ul className="flex flex-row  justify-center items-center gap-6 max-[760px]:w-full max-[760px]:justify-between ">
             <li className="max-[760px]:hidden">
-              <a href="" className="hover:font-bold">
+              <Link to={"/products"} className="hover:font-bold">
                 Products
-              </a>
+              </Link>
             </li>
             <li className="max-[760px]:hidden">
               <a href="" className="hover:font-bold">
@@ -20,7 +21,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="">
+              <Link to={"/"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="88"
@@ -47,17 +48,17 @@ export default function Header() {
                     />
                   </defs>
                 </svg>
-              </a>
+              </Link>
             </li>
             <li className="max-[760px]:hidden">
-              <a href="" className="hover:font-bold">
+              <Link to={"/contact"} className="hover:font-bold">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="max-[760px]:hidden">
-              <a href="" className=" hover:font-bold">
+              <Link to={"/work"} className=" hover:font-bold">
                 Work
-              </a>
+              </Link>
             </li>
             <li className="hidden max-[760px]:inline">
               <button
@@ -74,13 +75,13 @@ export default function Header() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>

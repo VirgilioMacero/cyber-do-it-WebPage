@@ -1,7 +1,7 @@
 import { useState } from "react";
 import image from "../../assets/carrousel-background.png";
 
-export default function Carrousel({images}:{images:Array<string>}) {
+export default function Carrousel({ images }: { images: Array<string> }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [startPos, setStartPos] = useState(0);
@@ -13,15 +13,17 @@ export default function Carrousel({images}:{images:Array<string>}) {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
-
+  //@ts-ignore
   const startPosition = (position) => {
     setIsDragging(true);
     setStartPos(position);
     setCurrentTranslate(prevTranslate);
   };
-
+  //@ts-ignore
   const movePosition = (position) => {
     if (isDragging) {
       const currentPosition = position - startPos;
@@ -60,37 +62,47 @@ export default function Carrousel({images}:{images:Array<string>}) {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-16 h-[420px] text-white"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M15.75 19.5 8.25 12l7.5-7.5"
             />
           </svg>
         </button>
         <div className="min-h-[320px] h-full w-5/6 mx-[4vw] shadow-2xl shadow-white rounded-[60px] max-[700px]:w-full relative overflow-hidden ">
-          <div className="flex h-full transition-transform" style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          <div
+            className="flex h-full transition-transform"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             onTouchStart={(e) => startPosition(e.touches[0].clientX)}
             onTouchMove={(e) => movePosition(e.touches[0].clientX)}
             onTouchEnd={endPosition}
           >
-            {images.map((image, index) => {  
-               if (image.includes('http')) 
-                {
-                 return <img src={image} alt="" key={index} className="min-w-full h-full"/>
-                }
-                else{
-                  return <div className="h-full text-white min-w-full flex items-center justify-center w-full bg-transparent"> 
+            {images.map((image, index) => {
+              if (image.includes("http")) {
+                return (
+                  <img
+                    src={image}
+                    alt=""
+                    key={index}
+                    className="min-w-full h-full"
+                  />
+                );
+              } else {
+                return (
+                  <div
+                    key={index}
+                    className="h-full text-white min-w-full flex items-center justify-center w-full bg-transparent"
+                  >
                     {image}
                   </div>
-                }
-              })}
-
+                );
+              }
+            })}
           </div>
-
         </div>
         <button
           id="rigthButton"
@@ -101,13 +113,13 @@ export default function Carrousel({images}:{images:Array<string>}) {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-16 h-[420px] text-white"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>

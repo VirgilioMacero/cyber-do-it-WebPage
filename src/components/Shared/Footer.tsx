@@ -2,7 +2,7 @@ export default function Footer() {
   const fechaActual = new Date();
 
   return (
-    <div className="h-[220px] w-full">
+    <div className=" w-full relative bottom-0">
       <div className="flex flex-row-reverse  mt-10 max-[700px]:flex-row max-[700px]:ml-4">
         <div
           className="grid grid-cols-2 gap-10 max-[376px]:grid-cols-1 "
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
       <div
-        className="w-full text-center mt-10 max-[571px]:mt-0"
+        className="w-full text-center pt-10 max-[571px]:mt-0"
         style={{ fontFamily: "Azeret Mono" }}
       >
         <p className="text-xs">

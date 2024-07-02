@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import Products from "./views/Products";
 import Header from "./components/Shared/Header";
 import Footer from "./components/Shared/Footer";
+import NotFound from "./components/Shared/NotFound";
 
 function App() {
   const [cookies] = useCookies(["cookieConsent"]);
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         {!cookies.cookieConsent && <CookieConsent />}
         <Footer />

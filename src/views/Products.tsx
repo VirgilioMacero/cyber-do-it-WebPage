@@ -1,5 +1,3 @@
-import Footer from "../components/Shared/Footer";
-import Header from "../components/Shared/Header";
 import NavProducts from "../components/Products/NavProducts";
 import SectionProduct from "../components/Products/SectionProduct";
 
@@ -36,7 +34,7 @@ export default function Products() {
         title="DESIGN"
         cards={desing}
         className="bg-gradient-to-r from-purple-700 to-purple-900"
-        classNameCard="bg-gradient-to-b from-purple-400 to-purple-600 p-4 min-h-[201px] min-w-[181px]"
+        classNameCard="bg-gradient-to-b from-purple-400 to-purple-600 p-4 min-w-[181px]"
       />
       <SectionProduct
         title="IT SERVICES"

@@ -1,40 +1,31 @@
 import LinkButton from "../Shared/LinkButton";
+import styles from "../Styles/LinkButton.module.css";
 
-export default function NavProducts(){
-    return (
-        <div>
-            <div className="bg-black w-full text-white py-8">
-                <h2 className="text-3xl font-bold mb-6 text-left">OUR PRODUCTS</h2>
-                <div className="flex flex-wrap justify-center md:space-x-4 gap-y-3">
-                    <LinkButton 
-                    className="
-                            bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600
-                            text-white font-bold rounded-full shadow-md 
-                            py-6 px-8
-                            
-                            text-3xl text-center
-                            "
-                    name="SOCIAL MEDIA"
-                    />
-                <LinkButton 
-                    className=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-6 px-8 rounded-full shadow-md text-3xl text-center"
-                    name="SOCIAL MEDIA"
-                    />
-                    <LinkButton 
-                    className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-6 px-8 rounded-full shadow-md text-3xl text-center"
-                    name="DESING"
-                    />
-                    
-                    <LinkButton 
-                    className="bg-gradient-to-r from-blue-500 to-gray-600 hover:from-blue-600 hover:to-gray-700 text-white font-bold py-6 px-8 rounded-full shadow-md text-3xl text-center"
-                    name="IT SERVICES"
-                    />                    
-                    <LinkButton 
-                    className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-6 px-8 rounded-full shadow-md text-3xl text-center"
-                    name="CDI PACKAGES"
-                    />
-                </div>
-            </div>
+export default function NavProducts() {
+  return (
+    <div>
+      <div className="bg-black text-white py-8">
+        <h2 className="text-3xl font-bold mb-6 text-left px-5">OUR PRODUCTS</h2>
+        <div className="grid grid-cols-5 px-4 gap-4 max-[1585px]:grid-cols-4 max-[1255px]:grid-cols-3 max-[941px]:grid-cols-2 max-[646px]:grid-cols-1">
+          <LinkButton
+            className={`${styles.LinkButton} ${styles.SocialMedia}`}
+            name="SOCIAL MEDIA"
+          />
+          <LinkButton
+            className={`${styles.LinkButton} ${styles.Design}`}
+            name="DESING"
+          />
+
+          <LinkButton
+            className={`${styles.LinkButton} ${styles.ItServices}`}
+            name="IT SERVICES"
+          />
+          <LinkButton
+            className={`${styles.LinkButton} ${styles.CDIPackages}`}
+            name="CDI PACKAGES"
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 }

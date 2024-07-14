@@ -7,19 +7,9 @@ export default function LinkButton({
   link?: string;
   className?: string;
 }) {
-
-
   return (
-    <a href={link} className="w-full">
-      <p
-        style={{
-          fontFamily: "Azeret Mono",
-        }}
-        className={`p-4 rounded-full ${className}`}
-
-      >
-        {name}
-      </p>
+    <a href={link} className={`p-4  ${className}`}>
+      <p>{name}</p>
     </a>
   );
 }

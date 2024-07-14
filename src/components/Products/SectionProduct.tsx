@@ -21,6 +21,8 @@ export default function SectionProduct({
             <Card className={classNameCard} id={card.id} title={card.title} description={card.description} />
           ))}
         </div>
+
       </div>
-    );
+    </div>
+  );
 }

@@ -1,0 +1,47 @@
+.LinkButton {
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 69px;
+  text-align: center;
+  align-content: center;
+}
+.LinkButton > p {
+  font-family: Azeret Mono;
+  font-weight: 400;
+  font-size: larger;
+}
+.SocialMedia {
+  border: 1px solid #52c8ef;
+  background: linear-gradient(
+    232deg,
+    rgba(82, 200, 239, 0.39) 23.33%,
+    rgba(217, 217, 217, 0) 71.84%
+  );
+}
+.Design {
+  border: 1px solid #cea0ff;
+  background: linear-gradient(
+    232deg,
+    rgba(155, 75, 239, 0.5) 23.33%,
+    rgba(217, 217, 217, 0) 71.84%
+  );
+}
+.ItServices {
+  border: 1px solid #607cff;
+  background: linear-gradient(
+    232deg,
+    rgba(74, 106, 255, 0.43) 23.33%,
+    rgba(217, 217, 217, 0) 71.84%
+  );
+}
+.CDIPackages {
+  border: 1px solid #e3f6ff;
+  background: linear-gradient(
+    242deg,
+    rgba(117, 55, 182, 0.14) 9.44%,
+    rgba(82, 200, 239, 0.84) 19.63%,
+    rgba(117, 55, 182, 0.25) 60.84%,
+    rgba(82, 200, 239, 0.68) 78.12%,
+    rgba(117, 55, 182, 0.13) 94.51%
+  );
+}

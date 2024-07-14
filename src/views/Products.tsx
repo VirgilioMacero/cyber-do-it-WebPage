@@ -1,5 +1,3 @@
-import Footer from "../components/Shared/Footer";
-import Header from "../components/Shared/Header";
 import NavProducts from "../components/Products/NavProducts";
 import SectionProduct from "../components/Products/SectionProduct";
 

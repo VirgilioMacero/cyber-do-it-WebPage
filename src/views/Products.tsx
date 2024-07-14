@@ -33,10 +33,16 @@ export default function Products() {
     <div className="">
       <NavProducts />
       <SectionProduct
+        title="SOCIAL MEDIA"
+        cards={desing}
+        className="bg-gradient-to-r from-purple-700 to-purple-900"
+        classNameCard="bg-gradient-to-b from-purple-400 to-purple-600 p-4"
+      />
+      <SectionProduct
         title="DESIGN"
         cards={desing}
         className="bg-gradient-to-r from-purple-700 to-purple-900"
-        classNameCard="bg-gradient-to-b from-purple-400 to-purple-600 p-4 min-h-[201px] min-w-[181px]"
+        classNameCard="bg-gradient-to-b from-purple-400 to-purple-600 p-4"
       />
       <SectionProduct
         title="IT SERVICES"

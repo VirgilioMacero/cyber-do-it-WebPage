@@ -10,7 +10,7 @@ export default function LinkButton({
 
 
   return (
-    <a href={link}>
+    <a href={link} className="w-full">
       <p
         style={{
           fontFamily: "Azeret Mono",

@@ -1,0 +1,84 @@
+.SectionProduct {
+}
+
+.SectionProduct > h1 {
+  font-family: "Azeret Mono";
+  font-style: normal;
+  position: relative;
+  background-clip: padding-box;
+  font-weight: 400;
+  line-height: 116.758%;
+  text-transform: uppercase;
+  border-radius: 78.5px;
+  border: solid 2px white;
+}
+
+.SocialMedia {
+  background: linear-gradient(
+    123deg,
+    #000 7.75%,
+    #367f96 39.11%,
+    #b3ecff 78.78%
+  );
+}
+
+.SocialMedia > h1 {
+  color: #b3ecff;
+  background: linear-gradient(
+    91deg,
+    rgba(171, 234, 255, 0) 6.08%,
+    rgba(96, 215, 255, 0.54) 93.92%
+  );
+}
+
+.Design {
+  background: linear-gradient(
+    117deg,
+    #000 0.11%,
+    #9852e2 43.02%,
+    #e9d3ff 99.89%
+  );
+}
+.Design > h1 {
+  color: #e9d3ff;
+  background: linear-gradient(
+    89deg,
+    rgba(117, 55, 182, 0) 2.27%,
+    rgba(203, 152, 255, 0.54) 97.73%
+  );
+}
+
+.ITServices {
+  background: linear-gradient(
+    124deg,
+    #000 11.76%,
+    #4361ed 54.47%,
+    #bbc7ff 99.66%
+  );
+}
+
+.ITServices > h1 {
+  color: #bbc7ff;
+  background: linear-gradient(
+    90deg,
+    rgba(67, 97, 237, 0) 0%,
+    rgba(185, 197, 255, 0.54) 100%
+  );
+}
+
+.CDIPackages {
+  background: linear-gradient(
+    180deg,
+    #a8a8a8 0%,
+    #a8a8a8 81%,
+    rgba(168, 168, 168, 0) 100%
+  );
+}
+.CDIPackages > h1 {
+  background: linear-gradient(
+    180deg,
+    #a8a8a8 0%,
+    #a8a8a8 81%,
+    rgba(168, 168, 168, 0) 100%
+  );
+}

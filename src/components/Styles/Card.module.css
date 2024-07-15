@@ -1,0 +1,52 @@
+.Card {
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 30px;
+}
+.CardImage {
+  width: 158px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+}
+@media (max-width: 445px) {
+  .Card {
+    width: 100%;
+  }
+  .CardImage {
+    width: 100%;
+  }
+}
+.SocialMedia {
+  border: 1px solid #1dc7ff;
+  background: linear-gradient(
+    157deg,
+    rgba(3, 66, 87, 0.43) 3.16%,
+    rgba(255, 255, 255, 0.71) 93.98%
+  );
+}
+
+.Design {
+  border: 1px solid #cea0ff;
+  background: linear-gradient(
+    154deg,
+    rgba(67, 25, 112, 0.41) 1.02%,
+    rgba(255, 255, 255, 0.71) 98.98%
+  );
+}
+
+.ITServices {
+  border: 1px solid #7e95ff;
+  background: linear-gradient(
+    155deg,
+    rgba(22, 38, 113, 0.41) 1.26%,
+    rgba(255, 255, 255, 0.71) 98.74%
+  );
+}
+
+.CDIPackages {
+  background: #868686;
+}

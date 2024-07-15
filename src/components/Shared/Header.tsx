@@ -16,9 +16,9 @@ export default function Header() {
               </Link>
             </li>
             <li className="max-[760px]:hidden">
-              <a href="" className="hover:font-bold">
+              <Link to={"/about_us"} className="hover:font-bold">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
               <Link to={"/"}>
@@ -114,24 +114,33 @@ export default function Header() {
       {navbar ? (
         <div className="bg-white h-[250px] border-b-4 border-b-indigo-700">
           <ul className="px-4 h-[200px] grid grid-cols-1 gap-4">
-            <a
-              href=""
+            <Link
+              to={"/products"}
               className=" border-b-2 h-full w-full font-mono text-lg focus:font-bold"
             >
               Products
-            </a>
+            </Link>
 
-            <a href="" className="border-b-2 font-mono text-lg focus:font-bold">
+            <Link
+              to={"/about_us"}
+              className="border-b-2 font-mono text-lg focus:font-bold"
+            >
               About Us
-            </a>
+            </Link>
 
-            <a href="" className="border-b-2 font-mono text-lg focus:font-bold">
+            <Link
+              to={"/contact"}
+              className="border-b-2 font-mono text-lg focus:font-bold"
+            >
               Contact
-            </a>
+            </Link>
 
-            <a href="" className="border-b-2 font-mono text-lg focus:font-bold">
+            <Link
+              to={"/work"}
+              className="border-b-2 font-mono text-lg focus:font-bold"
+            >
               Work
-            </a>
+            </Link>
           </ul>
         </div>
       ) : (

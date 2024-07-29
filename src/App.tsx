@@ -5,7 +5,7 @@ import "./fonts/futur.ttf";
 import { CookiesProvider } from "react-cookie";
 import { useCookies } from "react-cookie";
 import CookieConsent from "./components/Shared/CookieConsent";
-import SessionTimeoutHandler from "./components/Shared/SessionTimeoutHandler";
+// import SessionTimeoutHandler from "./components/Shared/SessionTimeoutHandler";
 import { Route, Routes } from "react-router-dom";
 import Products from "./views/Products";
 import Header from "./components/Shared/Header";
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <CookiesProvider>
-        <SessionTimeoutHandler />
+        {/* <SessionTimeoutHandler /> */}
         <Header />
         <main className="flex-grow">
           <Routes>

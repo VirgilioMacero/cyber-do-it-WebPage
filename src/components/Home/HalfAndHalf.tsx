@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import baseimage from "../../assets/taviCow.jpg";
 
 export default function HalfAndHalf({
@@ -48,13 +49,13 @@ export default function HalfAndHalf({
           >
             {firstText}
           </p>
-          <a
-            href=""
+          <Link
+            to={"/about_us"}
             style={{ backgroundColor: secondColor, fontFamily: "Azeret Mono" }}
             className={`p-4 rounded-full`}
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
 

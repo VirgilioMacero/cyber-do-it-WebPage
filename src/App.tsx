@@ -16,19 +16,21 @@ function App() {
   const [cookies] = useCookies(["cookieConsent"]);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <CookiesProvider>
         <SessionTimeoutHandler />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
         {!cookies.cookieConsent && <CookieConsent />}
         <Footer />
       </CookiesProvider>
-    </>
+    </div>
   );
 }
 
